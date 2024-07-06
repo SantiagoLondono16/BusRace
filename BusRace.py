@@ -9,8 +9,7 @@ def console():
         os.system('clear')
 
 def advance(bus):
-    x = ["plus", "notPlus"]
-    if random.choice(x) == "plus":
+    if random.random() >= 0.5:
         for i in range (4):
             bus[i] = '  ' + bus[i]
     else:
